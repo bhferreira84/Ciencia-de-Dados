@@ -1,4 +1,4 @@
 # Ciencia-de-Dados
 
-Implementatação de códigos da diciplina de análise de algorítimos.
+Implementatação de códigos da disciplina de análise de algorítimos.
  
