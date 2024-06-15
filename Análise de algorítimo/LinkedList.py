@@ -13,7 +13,7 @@ class LinkedList:
 
 
     def append(self, elem):
-        #Insersão quando a lista não está vazia
+        #Insersão, na última posição da lista, quando a lista não está vazia
         if self.root:
             ponteiro = self.root
             while(ponteiro.next):
@@ -36,6 +36,7 @@ class LinkedList:
         pass
     
     def __getitem__(self, index):
+        '''a= lista[7]  a função retorna o valor de um determinado índice da lista '''
         ponteiro= self.root
         for i in range(index):
             if ponteiro:
@@ -48,6 +49,7 @@ class LinkedList:
             raise IndexError(" List index out of range ")
     
     def __setitem__(self,index, elem):
+        ''' lista[7]= 7 A função inclui um determinado valor em um '''
         ponteiro= self.root
         for i in range(index):
             if ponteiro:
@@ -69,9 +71,13 @@ class LinkedList:
                 return i
             ponteiro = ponteiro.next
             i += 1
-            
-            
-        raise ValueError(f'{elem} is not in list')    
+        raise ValueError(f'{elem} is not in list')
+    
+    
+    def insert(self,index, elem):
+        if index ==0:
+            node
+        
             
             
       
